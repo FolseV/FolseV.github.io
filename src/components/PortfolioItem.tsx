@@ -1,5 +1,3 @@
-import React from "react";
-
 type PortfolioProps = {
   title: string;
   imgUrl: string;

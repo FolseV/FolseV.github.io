@@ -1,9 +1,6 @@
-import React from "react";
 import Title from "./Title";
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <div className="flex flex-col mb-10 mx-auto">
       <div className="flex justify-center items-center mx-2">
