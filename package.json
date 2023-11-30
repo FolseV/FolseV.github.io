@@ -1,4 +1,5 @@
 {
+  "homepage": "https://FolseV.github.io/Minimal-portfolio/",
   "name": "minimal-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -12,7 +13,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gh-pages": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -26,6 +26,7 @@
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.1.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2",
