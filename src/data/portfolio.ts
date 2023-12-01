@@ -1,13 +1,13 @@
 export default [
   {
     title: "Minimal portfolio",
-    imgUrl: "/assets/img/minimal-portfolio.png",
+    imgUrl: "/minimal-portfolio/assets/minimal-portfolio.png",
     stack: ["Vite", "TS", "TailwindCSS", "React"],
     link: "https://github.com/FolseV/minimal-portfolio",
   },
   {
     title: "Memory game",
-    imgUrl: "/assets/img/memory-game.png",
+    imgUrl: "/minimal-portfolio/assets/memory-game.jpg",
     stack: ["React", "TypeScript", "Redux", "Redux-thunk", "React-router"],
     link: "https://github.com/FolseV/Memory-game",
   },

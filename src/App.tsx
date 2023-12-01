@@ -4,8 +4,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
-import Sun from "./assets/sun.svg";
-import Moon from "./assets/moon.svg";
+import Sun from "./svg/sun.svg";
+import Moon from "./svg/moon.svg";
 
 function App() {
   const [theme, setTheme] = useState(null || "");
