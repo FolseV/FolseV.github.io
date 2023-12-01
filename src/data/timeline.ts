@@ -1,14 +1,14 @@
 export default [
   {
     year: "Today",
-    title: "Software Engineer",
+    title: "Freelance Projects Software Engineer",
     duration: "2 years",
     details: "",
   },
   {
-    year: "Today",
-    title: "Software Engineer",
-    duration: "2 years",
+    year: "2021",
+    title: "Study as Software Engineer",
+    duration: "1 year",
     details: "bla bla bla",
   },
   {
