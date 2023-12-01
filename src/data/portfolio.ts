@@ -12,15 +12,9 @@ export default [
     link: "https://github.com/FolseV/Memory-game",
   },
   {
-    title: "Website",
-    imgUrl: "",
-    stack: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/FolseV",
-  },
-  {
-    title: "Website",
-    imgUrl: "",
-    stack: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/FolseV",
+    title: "Photo gallary",
+    imgUrl: "/minimal-portfolio/assets/photo-gallary.png",
+    stack: ["React", "TypeScript", "SCSS"],
+    link: "https://github.com/FolseV/Practice-React-Photo-Gallary",
   },
 ];
