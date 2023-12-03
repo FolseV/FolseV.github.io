@@ -3,7 +3,7 @@ export default [
     year: "Today",
     title: "Freelance Projects Software Engineer",
     duration: "2 years",
-    details: "I worked on Freelance projects",
+    details: "I worked on Freelance projects ",
   },
   {
     year: "2021",

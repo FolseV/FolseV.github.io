@@ -9,6 +9,7 @@ import Moon from "./svg/moon.svg";
 
 function App() {
   const [theme, setTheme] = useState(null || "");
+  const [lang, setLang] = useState("ENG");
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme:dark)").matches) {
@@ -20,6 +21,10 @@ function App() {
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const handleLangSwitch = () => {
+    setLang(lang === "RU" ? "ENG" : "RU");
   };
 
   useEffect(() => {
@@ -34,6 +39,13 @@ function App() {
     <>
       <button
         type="button"
+        onClick={handleLangSwitch}
+        className="fixed p-2 z-10 right-20 top-4 text-sm bg-slate-300 dark:bg-orange-200 rounded-md"
+      >
+        {lang}
+      </button>
+      <button
+        type="button"
         onClick={handleThemeSwitch}
         className="fixed p-2 z-10 right-5 top-4 bg-slate-300 dark:bg-orange-200 text-lg rounded-md"
       >
@@ -42,7 +54,7 @@ function App() {
 
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
-          <Intro />
+          <Intro lang={lang} />
           <Portfolio />
           <Timeline />
           <Contact />
