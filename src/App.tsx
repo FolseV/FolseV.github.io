@@ -6,6 +6,8 @@ import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
 import Sun from "./svg/sun.svg";
 import Moon from "./svg/moon.svg";
+import github_white from "./svg/github-mark-white.svg";
+import github_mark from "./svg/github-mark.svg";
 
 function App() {
   const [theme, setTheme] = useState(null || "");
@@ -51,13 +53,25 @@ function App() {
       >
         {theme === "dark" ? <img src={Sun} alt="sun" className="w-5" /> : <img src={Moon} alt="sun" className="w-5" />}
       </button>
+      <a
+        target="_black"
+        rel="noopener noreferrer"
+        className="fixed p-2 z-10 left-5 top-4 bg-slate-300 dark:bg-orange-200 text-lg rounded-md"
+        href="https://github.com/FolseV"
+      >
+        {theme === "dark" ? (
+          <img src={github_mark} alt="github-logo" className="w-5" />
+        ) : (
+          <img src={github_white} alt="github-logo-white" className="w-5" />
+        )}
+      </a>
 
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro lang={lang} />
           <Portfolio />
-          <Timeline />
-          <Contact />
+          <Timeline lang={lang} />
+          <Contact lang={lang} />
           <Footer />
         </div>
       </div>
