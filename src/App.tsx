@@ -39,32 +39,34 @@ function App() {
 
   return (
     <>
-      <button
-        type="button"
-        onClick={handleLangSwitch}
-        className="fixed p-2 z-10 right-20 top-4 text-sm bg-slate-300 dark:bg-yellow-100 rounded-md"
-      >
-        {lang}
-      </button>
-      <button
-        type="button"
-        onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-5 top-4 bg-slate-300 dark:bg-yellow-100 text-lg rounded-md"
-      >
-        {theme === "dark" ? <img src={Sun} alt="sun" className="w-5" /> : <img src={Moon} alt="sun" className="w-5" />}
-      </button>
-      <a
-        target="_black"
-        rel="noopener noreferrer"
-        className="fixed p-2 z-10 left-5 top-4 bg-slate-300 dark:bg-yellow-100 text-lg rounded-md"
-        href="https://github.com/FolseV"
-      >
-        {theme === "dark" ? (
-          <img src={github_mark} alt="github-logo" className="w-5" />
-        ) : (
-          <img src={github_white} alt="github-logo-white" className="w-5" />
-        )}
-      </a>
+      <div className="fixed h-14 w-full bg-white dark:bg-stone-900">
+        <button
+          type="button"
+          onClick={handleLangSwitch}
+          className="fixed p-2 z-10 right-20 top-3 text-sm bg-slate-300 dark:bg-yellow-100 rounded-md"
+        >
+          {lang}
+        </button>
+        <button
+          type="button"
+          onClick={handleThemeSwitch}
+          className="fixed p-2 z-10 right-5 top-3 bg-slate-300 dark:bg-yellow-100 text-lg rounded-md"
+        >
+          {theme === "dark" ? <img src={Sun} alt="sun" className="w-5" /> : <img src={Moon} alt="sun" className="w-5" />}
+        </button>
+        <a
+          target="_black"
+          rel="noopener noreferrer"
+          className="fixed p-2 z-10 left-5 top-3 bg-slate-300 dark:bg-yellow-100 text-lg rounded-md"
+          href="https://github.com/FolseV"
+        >
+          {theme === "dark" ? (
+            <img src={github_mark} alt="github-logo" className="w-5" />
+          ) : (
+            <img src={github_white} alt="github-logo-white" className="w-5" />
+          )}
+        </a>
+      </div>
 
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
