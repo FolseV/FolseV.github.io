@@ -1,9 +1,11 @@
 import timeline from "../data/timeline";
 import TinelineItem from "./TinelineItem";
 import Title from "./Title";
+
 type Props = {
   lang: string;
 };
+
 const Timeline = ({ lang }: Props) => {
   return (
     <div className="flex flex-col md:flex-row justify-center  my-20 ">

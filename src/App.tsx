@@ -42,21 +42,21 @@ function App() {
       <button
         type="button"
         onClick={handleLangSwitch}
-        className="fixed p-2 z-10 right-20 top-4 text-sm bg-slate-300 dark:bg-orange-200 rounded-md"
+        className="fixed p-2 z-10 right-20 top-4 text-sm bg-slate-300 dark:bg-yellow-100 rounded-md"
       >
         {lang}
       </button>
       <button
         type="button"
         onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-5 top-4 bg-slate-300 dark:bg-orange-200 text-lg rounded-md"
+        className="fixed p-2 z-10 right-5 top-4 bg-slate-300 dark:bg-yellow-100 text-lg rounded-md"
       >
         {theme === "dark" ? <img src={Sun} alt="sun" className="w-5" /> : <img src={Moon} alt="sun" className="w-5" />}
       </button>
       <a
         target="_black"
         rel="noopener noreferrer"
-        className="fixed p-2 z-10 left-5 top-4 bg-slate-300 dark:bg-orange-200 text-lg rounded-md"
+        className="fixed p-2 z-10 left-5 top-4 bg-slate-300 dark:bg-yellow-100 text-lg rounded-md"
         href="https://github.com/FolseV"
       >
         {theme === "dark" ? (
@@ -69,7 +69,7 @@ function App() {
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
         <div className="max-w-5x1 w-11/12 mx-auto">
           <Intro lang={lang} />
-          <Portfolio />
+          <Portfolio theme={theme} />
           <Timeline lang={lang} />
           <Contact lang={lang} />
           <Footer />
